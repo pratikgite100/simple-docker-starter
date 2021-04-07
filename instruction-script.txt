@@ -40,3 +40,9 @@ docker ps -a
 
 # Get latest mysql
 docker pull mysql
+docker run --name mysql-latest1 -e MYSQL_ROOT_PASSWORD=mysecret-pw5 -d mysql:latest
+
+docker ps -a
+docker stop 04a
+docker rm 04a
+docker rmi e64
